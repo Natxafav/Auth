@@ -6,7 +6,7 @@ const Home = () => {
     <>
     <div className="main">
 
-    <Typography variant='h3'>Welcome</Typography>
+    <Typography variant='h3'>Welcome Home</Typography>
     </div>
     
     

@@ -10,12 +10,16 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { signup } from "../../config/authService";
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+const navigate=useNavigate()
+
 
   const handleSignUp = async () => {
     const resp = await signup({
@@ -27,6 +31,7 @@ const Signup = () => {
     console.log(resp)
     localStorage.setItem("token", resp.token);
     localStorage.setItem("role", resp.role);
+    navigate('/home')
   };
 
   return (

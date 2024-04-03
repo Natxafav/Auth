@@ -36,12 +36,17 @@ const Header = () => {
                 justifyContent: "space-around",
               }}
             >
+              <Link to='/login'>
               <Button variant="contaided" sx={{ marginLeft: "auto" }}>
                 Login
               </Button>
+              </Link>
+              <Link to='/signup'>
               <Button variant="containded" sx={{ marginLeft: "auto" }}>
                 SingUp
               </Button>
+              </Link>
+
             </Box>
           </Toolbar>
         </AppBar>
