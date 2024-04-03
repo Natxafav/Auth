@@ -9,7 +9,7 @@ const Home = () => {
     <>
     <div className="main">
 
-    <Typography variant='h3'>Welcome Home {user.name&& user.name.firstname} </Typography>
+    <Typography variant='h3'>Welcome Home {user.name && user.name['firstname']} </Typography>
     </div>
     
     
