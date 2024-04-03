@@ -11,12 +11,17 @@ import { login } from "../../config/authService";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+
   const navigate = useNavigate();
 
   const handleLogin = async () => {
+   
     const resp = await login({ email, password });
+  
+    console.log(resp)
     localStorage.setItem("token", resp.token);
     localStorage.setItem("role", resp.role);
     navigate("/home");

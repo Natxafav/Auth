@@ -11,6 +11,8 @@ import {
 import React, { useState } from "react";
 import { signup } from "../../config/authService";
 import { useNavigate } from "react-router-dom";
+
+
 const Signup = () => {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
