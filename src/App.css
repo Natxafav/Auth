@@ -3,7 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  text-align: center;
 }
 body{
   margin:0px;
+}
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }

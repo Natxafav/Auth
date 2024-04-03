@@ -6,18 +6,17 @@ const Header = () => {
   return (
     <>
       <Box>
-        <AppBar position="static">
+        <AppBar position="static" >
           <Toolbar
-            sx={{ display: "flex", gap: "1em", justifyContent: "space-around" }}
-          >
-            <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Typography variant="h3"> Demo</Typography>
-            </Box>
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >           
+              <Typography variant="h3" sx={{width:'20vw'}}> Demo</Typography>
+        
             <Box
               sx={{
                 display: "flex",
-                gap: "1em",
-                justifyContent: "space-around",
+                justifyContent: "space-between",
+                width:'250px'
               }}
             >
               <Link>

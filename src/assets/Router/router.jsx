@@ -8,7 +8,7 @@ export const Router = createBrowserRouter([
         element: <MainLayout/>,
         chidren:[
             {
-                path: '/ ',
+                path: '',
                 element: <Home/>
             },
         ]
