@@ -24,6 +24,8 @@ const Login = () => {
     console.log(resp)
     localStorage.setItem("token", resp.token);
     localStorage.setItem("role", resp.role);
+    localStorage.setItem("username", resp.username);
+
     navigate("/home");
   };
 

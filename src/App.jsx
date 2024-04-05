@@ -6,6 +6,7 @@ import { Router } from "./assets/Router/router";
 import { useContext, useState } from "react";
 import { NameContext } from "./context/UserContext";
 
+
 function App() {
   const [user, setUser] = useState('');
 
